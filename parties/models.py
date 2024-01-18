@@ -61,7 +61,7 @@ class payment_installment(base_table):
     task_id = models.ForeignKey(task, on_delete=models.CASCADE)
     labor_id = models.ForeignKey(labor_register, on_delete=models.CASCADE)
     payment_entry = models.FloatField(default=0)
-    paid_date = models.DateField(default=timezone.now().date)
+    paid_date = models.DateField(default=timezone.now())
     def __str__(self):
         return self.payment_id
     

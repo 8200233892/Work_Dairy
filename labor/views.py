@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.shortcuts import render, redirect, get_object_or_404
 from django.core.mail import send_mail
 from django.db.models import Sum
@@ -293,4 +292,3 @@ def payments_view(request):
 def profile_view(request):
     return render(request, 'profile.html')
 
-# Create your views here.
